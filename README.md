@@ -1,0 +1,2 @@
+# bun-gpt-exe
+exercise
