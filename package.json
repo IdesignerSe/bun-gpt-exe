@@ -2,6 +2,9 @@
   "name": "bun-gpt-exe",
   "module": "index.tsx",
   "type": "module",
+ "scripts": {
+  "dev" : "bun --hot run index.tsx"
+ },
   "devDependencies": {
     "bun-types": "latest"
   },
