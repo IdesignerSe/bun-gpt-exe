@@ -39,6 +39,7 @@
             overflow: auto;
         }
     </style>
+ 
 </head>
 <body hx-trigger="load" hx-get="/load-history-on-page-load" hx-target=".chat-history" hx-swap="afterbegin">
     <nav class="container-fluid">
@@ -53,7 +54,7 @@
             </li>  
           </url>
     </nav>
-    <main>
+    <main class="container-fluid">
         <div class="grid">
             <aside>
                 <div class="sidebar">
@@ -68,7 +69,7 @@
                         <div id="messages" class="messages">
                             <!-- Conversation goes here -->
                         </div>
-                        <button class="htmx-indicator" id="indicator" aria-busy="true">Please wait...</button>
+                        <button>Please wait...</button>
                     </div>
                     <form hx-post="/new-chat" hx-target=".messages" hx-swap="beforeend" _="on submit target.reset()">
                         <textarea id="message-input" name="message"></textarea>
